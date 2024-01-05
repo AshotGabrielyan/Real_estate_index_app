@@ -12,11 +12,11 @@ st.set_page_config(page_title = 'Real Estate Market in Yerevan', page_icon = ":t
 st.title('Real Estate Market in Yerevan')
 with st.sidebar:
         st.title('Price and Rent Changes')
-        temp_cat = st.selectbox('Please chose index:',('Select','Real Estate Price Index', 'Real Estate Rent Index'))
-        temp_indice_type = st.selectbox('Select comparison baseline:',('Select','Previous month', 'Base month'))
+        temp_cat = st.selectbox('Select the Index:',('Select','Real Estate Price Index', 'Real Estate Rent Index'))
+        temp_indice_type = st.selectbox('Select Comparison Baseline:',('Select','Previous month', 'Base month'))
         temp_indice = st.selectbox('Select Index Measure:',('Select','Laspeyres index', 'Paasche index', 'Fisher index'))
         st.title('Data Info')
-        temp_date = st.selectbox('Please choose the date:',DATES_TO_SELECT)
+        temp_date = st.selectbox('Select the date:',DATES_TO_SELECT)
 
 
 if temp_cat == 'Real Estate Price Index' and temp_indice_type == 'Previous month':
