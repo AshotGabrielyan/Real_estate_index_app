@@ -16,7 +16,7 @@ with st.sidebar:
         temp_indice_type = st.selectbox('Select comparison baseline:',('Select','Previous month', 'Base month'))
         temp_indice = st.selectbox('Select Index Measure:',('Select','Laspeyres index', 'Paasche index', 'Fisher index'))
         st.title('Data Info')
-        temp_date = st.selectbox('Please chose date:',DATES_TO_SELECT)
+        temp_date = st.selectbox('Please choose the date:',DATES_TO_SELECT)
 
 
 if temp_cat == 'Real Estate Price Index' and temp_indice_type == 'Previous month':
